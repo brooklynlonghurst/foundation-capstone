@@ -1,4 +1,4 @@
-const plants = ('./db.json')
+const plants = require('./db.json')
 let globalId = 10
 
 module.exports = {
@@ -7,12 +7,18 @@ module.exports = {
     }, 
 
     addPlants: (req, res) => {
-        const { title, imageURL, desciption } = req.params
-        if(!title || !imageURL || !desciption){
+        const { title, imageURL, description } = req.body
+        console.log(title)
+        console.log(imageURL)
+        console.log(description)
+        if(!title || !imageURL || !description){
             res.sendStatus(400)
+            return
         }
         const copy = {...req.body, id: globalId}
+        console.log(plants)
         plants.push(copy)
+        console.log(plants)
         globalId++
         res.status(200).send(plants)
     }, 
@@ -24,7 +30,7 @@ module.exports = {
             plants.splice(idx, 1)
             res.status(200).send(plants)
         } else {
-            res.sendStatus(404)
+            res.sendStatus(400)
         } 
     }
 }

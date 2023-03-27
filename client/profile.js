@@ -1,16 +1,14 @@
 const plantContainer = document.querySelector('#plant-pic-container')
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:6000/api/plant`
+const baseURL = `http://localhost:4000/api`
 
-const plantCallback = ({ data: plants }) => displayMovies(plants)
-const errCallback = err => console.log(err.response.data)
+const plantCallback = ({ data: plants }) => displayPlants(plants)
+const errCallback = err => console.log(err)
 
-const getAllPlants = () => axios.get(baseURL).then(plantCallback).catch(errCallback)
-const createPlant = body => axios.post(baseURL, body).then(plantCallback).catch(errCallback)
+const getAllPlants = () => axios.get(baseURL + '/plants').then(plantCallback).catch(errCallback)
+const createPlant = body => axios.post(baseURL + '/plants', body).then(plantCallback).catch(errCallback)
 const deletePlant = id => axios.delete(`${baseURL}/${id}`).then(plantCallback).catch(errCallback)
-
-const addPlantBtn = document.getElementById('addPlantButton')
 
 function submitHandler(e) {
     e.preventDefault()
@@ -24,6 +22,7 @@ function submitHandler(e) {
         imageURL: imageURL.value,
         description: description.value
     }
+    console.log(bodyObj)
 
     createPlant(bodyObj)
 
@@ -39,7 +38,7 @@ function createPlantCard(plant){
 
     plantCard.innerHTML = `<img alt='plant picture' src=${plant.imageURL} class="plant-picture"/>
     <p class="plant-title">${plant.title}</p>
-    <button onclick="deleteMovie(${movie.id})">delete</button>
+    <button onclick="deletePlant(${plant.id})">delete</button>
     `
 
     plantContainer.appendChild(plantCard)
