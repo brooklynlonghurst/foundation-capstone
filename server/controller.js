@@ -1,5 +1,5 @@
 const plants = require('./db.json')
-let globalId = 10
+let globalId = 2
 
 module.exports = {
     getPlants: (req, res) => {
@@ -23,7 +23,7 @@ module.exports = {
         res.status(200).send(plants)
     }, 
 
-    deletePlant: (req, res) => {
+    deletePlant: (req, res) => {   
         const { id } = req.params
         const idx = plants.findIndex(plant => plant.id === +id)
         if(idx >= 0){
@@ -32,5 +32,5 @@ module.exports = {
         } else {
             res.sendStatus(400)
         } 
-    }
+    } 
 }

@@ -8,7 +8,7 @@ const errCallback = err => console.log(err)
 
 const getAllPlants = () => axios.get(baseURL + '/plants').then(plantCallback).catch(errCallback)
 const createPlant = body => axios.post(baseURL + '/plants', body).then(plantCallback).catch(errCallback)
-const deletePlant = id => axios.delete(`${baseURL}/${id}`).then(plantCallback).catch(errCallback)
+const deletePlant = id => axios.delete(`${baseURL}/plants/${id}`).then(plantCallback).catch(errCallback)
 
 function submitHandler(e) {
     e.preventDefault()
@@ -38,8 +38,8 @@ function createPlantCard(plant){
 
     plantCard.innerHTML = `<img alt='plant picture' src=${plant.imageURL} class="plant-picture"/>
     <p class="plant-title">${plant.title}</p>
-    <button onclick="deletePlant(${plant.id})">delete</button>
-    `
+    <p class="plant-description">${plant.description}</p>
+    <button onclick="deletePlant(${plant.id})">Delete</button>`
 
     plantContainer.appendChild(plantCard)
 }

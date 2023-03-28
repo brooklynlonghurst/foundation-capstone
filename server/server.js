@@ -16,4 +16,4 @@ app.delete('/api/plants/:id', deletePlant)
 
 const PORT = 4000;
 
-app.listen(PORT, () => console.log('server listening on port 6000'))
+app.listen(PORT, () => console.log('server listening on port 4000'))
