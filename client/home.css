@@ -4,39 +4,11 @@
     margin: 0%;
 }
 
-
-.navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 2%;
-    margin-left: 35%;
-    margin-right: 35%;
-}
-
-.aTag {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-
 .h1-home {
     font-size: 50px;
     position: absolute;
     margin-left: 820px;
     margin-top: 70px;
-}
-
-.white-content-box {
-    position: absolute;
-    background-color: #efece6;
-    height: 700px;
-    width: 100%;
-    margin-top: 4%;
 }
 
 .green-leaf-plant {
@@ -45,24 +17,6 @@ a:visited {
     position: absolute;
     justify-content: end;
 }
-
-
-.chrchrysanthemum {
-    width: 50p;
-    height: 60px;
-}
-
-/* .lilyOfTheValley {
-    width: 40%;
-    height: 35%;
-} */
-
-.daisy {
-    width: 40%;
-    height: 50%;
-}
-
-
 
 .signInUpForm {
     width: 350px;
@@ -73,6 +27,12 @@ a:visited {
     flex-direction: column;
     justify-content: space-evenly; 
     align-items: center;
+    font-size: larger;
     margin-left: 860px;
     margin-top: 250px;
+}
+
+#signInEmail {
+    size: 50;
+    box-shadow: inset; 
 }
