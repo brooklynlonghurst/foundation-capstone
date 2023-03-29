@@ -33,6 +33,41 @@
 }
 
 #signInEmail {
-    size: 50;
-    box-shadow: inset; 
+    size: 60;
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+}
+
+#passwordInput {
+    size: 60;
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+}
+
+#loginBtn {
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+}
+
+#signUpName {
+    size: 60;
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+}
+
+#signUpEmail {
+    size: 60;
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+}
+
+#signUpBtn {
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
 }
