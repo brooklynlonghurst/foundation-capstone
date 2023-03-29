@@ -39,7 +39,7 @@ function createPlantCard(plant){
     plantCard.innerHTML = `<img alt='plant picture' src=${plant.imageURL} class="plant-picture"/>
     <p class="plant-title">${plant.title}</p>
     <p class="plant-description">${plant.description}</p>
-    <button onclick="deletePlant(${plant.id})">Delete</button>`
+    <button class="deletePlant" onclick="deletePlant(${plant.id})">Remove</button>`
 
     plantContainer.appendChild(plantCard)
 }

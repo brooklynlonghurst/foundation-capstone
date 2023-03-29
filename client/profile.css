@@ -12,7 +12,7 @@ form {
     width: 300px;
     height: 300px;
     background-color: #e0dcd9;
-    position: relative;
+    position: absolute;
     display: flex; 
     flex-direction: column;
     justify-content: space-evenly; 
@@ -20,6 +20,14 @@ form {
     margin-top: 30px;
     margin-left: 1050px;
 }
+
+#title {
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    align-items: center;
+}
+
 
 .white-content-box {
     position: absolute;
@@ -46,4 +54,52 @@ form {
 a:visited {
     text-decoration: none;
     color: black;
+}
+
+/* #plant-pic-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} */
+
+.plant-picture {
+    width: 350px; 
+    height: 490px;
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px; 
+}
+
+.plant-card {
+    background-color: rgb(255, 254, 252);
+    width: 350px;
+    /* margin: 20px;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    margin-top: 30px ;
+}
+
+.plant-title {
+    font-size: 18px;
+    margin: 5px 0;
+    background-color:rgb(255, 254, 252);
+}
+
+.plant-description {
+    background-color:rgb(255, 254, 252);
+}
+
+.deletePlant {
+    background-color:rgb(255, 254, 252);
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
 }
