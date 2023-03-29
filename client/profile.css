@@ -43,6 +43,7 @@ form {
     margin: 10px;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
 
 #title {
