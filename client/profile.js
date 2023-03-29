@@ -54,3 +54,11 @@ function displayPlants(arr) {
 form.addEventListener('submit', submitHandler)
 
 getAllPlants()
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }

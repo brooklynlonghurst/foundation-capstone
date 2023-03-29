@@ -1,8 +1,9 @@
 [
     {
         "id": 1,
-        "title": "Flower",
-        "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4mxd3-pr0rW3dkY9ihGXB-_duAmOuOS9kg&usqp=CAU", 
-        "description": "This is a beautiful flower."   
+        "title": "fresh",
+        "imageURL": "https://images.pexels.com/photos/1877920/pexels-photo-1877920.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "description": "bamboo vibes"
     }
+
 ]

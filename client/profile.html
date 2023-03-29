@@ -12,11 +12,11 @@
   <nav class="navBar">  
     <a class="aTag" href="./home.html">Home</a>
     <a class="aTag" href="./profile.html">Profile</a>
+    <button class="open-button" onclick="openForm()">Post Your Plant</button>
   </nav>
 
- 
-
   
+  <div class="form-popup" id="myForm">
     <form>
       <input
         type='text'
@@ -32,7 +32,8 @@
         rows="10"
         placeholder="Description"/>
       <button id="addPlantButton">Add Your Plant</button>
-    </form>
+    </form> 
+  </div>
   
 
   <section id="plant-pic-container"></section>
