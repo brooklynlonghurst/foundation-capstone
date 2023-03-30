@@ -1,4 +1,6 @@
 const plants = require('./db.json')
+const bcrypt = require('bcryptjs')
+const users = []
 let globalId = 2
 
 module.exports = {
@@ -32,5 +34,44 @@ module.exports = {
         } else {
             res.sendStatus(400)
         } 
-    } 
+    }, 
+
+    login: (req, res) => {
+        console.log('Logging In User')
+        const { loginEmail, loginPassword } = req.body
+        for (let i = 0; i < users.length; i++) {
+          const existingPassword = bcrypt.compareSync(loginPassword, users[i].loginPassword)
+          if (users[i].loginEmail === loginEmail && existingPassword) {
+            console.log(users[i])
+            const secureUser = {...users[i]}
+            delete secureUser.loginPassword
+            console.log(secureUser)
+            return res.status(200).send(secureUser)
+          }
+        }
+        res.status(400).send("User not found.")
+    },
+
+    signUp: (req, res) => {
+        console.log('Signing Up User')
+        console.log(req.body)
+
+        const { signUpName, signUpEmail, signUpPassword } = req.body
+
+        const salt = bcrypt.genSaltSync(5)
+        const passwordHash = bcrypt.hashSync(signUpPassword, salt)
+
+        let userObj = {
+            signUpPassword: passwordHash,
+            signUpName,
+            signUpEmail
+        }
+        
+        users.push(userObj)
+
+        let secureUser = {...userObj}
+        delete secureUser.signUpPassword
+        res.status(200).send(secureUser)
+    }
+
 }

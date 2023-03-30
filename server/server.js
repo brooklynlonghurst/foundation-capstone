@@ -8,11 +8,14 @@ app.use(cors())
 
 app.use(express.static(`${__dirname}/client`))
 
-const { getPlants, addPlants, deletePlant } = require('./controller')
+const { getPlants, addPlants, deletePlant, login, signUp } = require('./controller')
 
 app.get('/api/plants', getPlants)
 app.post('/api/plants', addPlants)
 app.delete('/api/plants/:id', deletePlant)
+
+app.post('/api/login', login)
+app.post('/api/signup', signUp)
 
 const PORT = 4000;
 
