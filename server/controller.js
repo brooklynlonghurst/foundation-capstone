@@ -40,8 +40,9 @@ module.exports = {
         console.log('Logging In User')
         const { loginEmail, loginPassword } = req.body
         for (let i = 0; i < users.length; i++) {
-          const existingPassword = bcrypt.compareSync(loginPassword, users[i].loginPassword)
-          if (users[i].loginEmail === loginEmail && existingPassword) {
+          console.log(users[i])
+          const existingPassword = bcrypt.compareSync(loginPassword, users[i].signUpPassword)
+          if (users[i].signUpEmail === loginEmail && existingPassword) {
             console.log(users[i])
             const secureUser = {...users[i]}
             delete secureUser.loginPassword
