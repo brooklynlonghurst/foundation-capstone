@@ -33,6 +33,8 @@
 }
 
 #signInEmail {
+    border-color: black;
+    border-style: solid;
     size: 60;
     border-radius: 12px;
     border-top-left-radius: 15px; 
@@ -40,6 +42,8 @@
 }
 
 #passwordInput {
+    border-color: black;
+    border-style: solid;
     size: 60;
     border-radius: 12px;
     border-top-left-radius: 15px; 
@@ -47,12 +51,17 @@
 }
 
 #loginBtn {
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;
 }
 
 #signUpName {
+    border-color: black;
+    border-style: solid;
     size: 60;
     border-radius: 12px;
     border-top-left-radius: 15px; 
@@ -60,6 +69,8 @@
 }
 
 #signUpEmail {
+    border-color: black;
+    border-style: solid;
     size: 60;
     border-radius: 12px;
     border-top-left-radius: 15px; 
@@ -67,6 +78,9 @@
 }
 
 #signUpBtn {
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;

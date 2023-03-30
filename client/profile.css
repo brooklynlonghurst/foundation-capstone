@@ -48,6 +48,8 @@ form {
 }
 
 #title {
+    border-color: black;
+    border-style: solid;
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;
@@ -56,6 +58,8 @@ form {
 }
 
 #img {
+    border-color: black;
+    border-style: solid;
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;
@@ -64,6 +68,8 @@ form {
 }
 
 #description {
+    border-color: black;
+    border-style: solid;
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;
@@ -72,6 +78,9 @@ form {
 }
 
 #addPlantButton {
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;
