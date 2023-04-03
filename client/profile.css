@@ -149,13 +149,15 @@ a:visited {
 
 .plant-title {
     font-size: 18px;
-    margin: 5px 0;
+    margin: 5px;
     background-color:rgb(255, 254, 252);
 }
 
 .plant-description {
     background-color:rgb(255, 254, 252);
     text-align: center;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 .deletePlant {
