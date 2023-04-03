@@ -1,9 +1,16 @@
 [
     {
         "id": 1,
-        "title": "fresh",
-        "imageURL": "https://images.pexels.com/photos/1877920/pexels-photo-1877920.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "description": "bamboo vibes"
+        "title": "Potted Plant",
+        "imageURL": "https://images.pexels.com/photos/1777813/pexels-photo-1777813.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "description": "cute little guy"
+    }, 
+
+    {
+        "id": 2, 
+        "title": "Big O", 
+        "imageURL": "https://images.pexels.com/photos/1974508/pexels-photo-1974508.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "description": "solve the complexity of an empty space with this plant" 
     }
 
 ]

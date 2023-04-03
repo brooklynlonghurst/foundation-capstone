@@ -28,7 +28,7 @@ function submitHandler(e) {
 
     title.value = ''
     imageURL.value = ''
-    description = ''
+    description.value = ''
 }
 
 
