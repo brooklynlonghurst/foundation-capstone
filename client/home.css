@@ -68,6 +68,11 @@
     border-top-right-radius: 15px;
 }
 
+#loginBtn:hover {
+    background-color: black;
+    color: #cabfab;
+}
+
 #signUpName {
     border-color: black;
     border-style: solid;
@@ -103,6 +108,11 @@
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;
+}
+
+#signUpBtn:hover{
+    background-color: black;
+    color: #cabfab;
 }
 
 #passwordSignUpInput {

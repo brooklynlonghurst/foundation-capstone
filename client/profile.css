@@ -96,6 +96,11 @@ form {
     border-top-right-radius: 15px;
 }
 
+#addPlantButton:hover {
+    background-color: black;
+    color: #cabfab;
+}
+
 .navBar {
     display: flex;
     flex-direction: row;
@@ -172,4 +177,9 @@ a:visited {
     border-radius: 12px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;
+}
+
+.deletePlant:hover {
+    background-color: black;
+    color: #e0dcd9;
 }
