@@ -1,30 +1,23 @@
 [
     {
         "id": 1,
-        "title": "Potted Plant",
+        "title": "Aglaonema",
         "imageURL": "https://images.pexels.com/photos/1777813/pexels-photo-1777813.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "description": "cute little guy"
+        "description": "an easy houseplant"
     }, 
 
     {
         "id": 2, 
-        "title": "Leaves", 
-        "imageURL": "https://images.pexels.com/photos/1729195/pexels-photo-1729195.jpeg?auto=compress&cs=tinysrgb&w=600", 
-        "description": "fall"
-    }, 
-    
-    {
-        "id": 3, 
-        "title": "Batman Plant", 
+        "title": "Two Fern Leaves", 
         "imageURL": "https://images.pexels.com/photos/1216345/pexels-photo-1216345.jpeg?auto=compress&cs=tinysrgb&w=600", 
-        "description": "dark mystery"
+        "description": "doesn't have flowers or seeds"
     }, 
 
     {
-        "id": 4, 
-        "title": "Rich Green", 
+        "id": 3, 
+        "title": "Monstera", 
         "imageURL": "https://images.pexels.com/photos/1524235/pexels-photo-1524235.jpeg?auto=compress&cs=tinysrgb&w=600", 
-        "description": "looks like a millon bucks"
+        "description": "sometimes referred to as the swiss chesse plant"
     }
 
 ]
