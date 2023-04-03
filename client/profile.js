@@ -56,17 +56,16 @@ form.addEventListener('submit', submitHandler)
 getAllPlants()
 
 
-var modal = document.getElementById("myForm");
+let modal = document.getElementById("myForm");
 
 // Get the button that opens the modal
-var btn = document.getElementById("open-button");
+let btn = document.getElementById("open-button");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
-    console.log('ehy!')
   modal.style.display = "block";
 }
 

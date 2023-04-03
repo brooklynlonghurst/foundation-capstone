@@ -48,3 +48,26 @@ signUpButton.addEventListener('click', (event) => {
         console.log('something went wrong')
     })
 })
+
+
+let modal = document.getElementById("signup-popup")
+let btn = document.getElementById("signUpBtn")
+let span = document.getElementsByClassName("close")[0]
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+  
+span.onclick = function() {
+    modal.style.display = "none";
+}
+  
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+}
+
+const signUpMessage = `<h3>Thanks for signing up, ${signUpName}!</h3>`
+
+document.h3.innerHTML = signUpMessage

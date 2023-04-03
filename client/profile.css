@@ -152,6 +152,7 @@ a:visited {
 }
 
 .deletePlant {
+    cursor: pointer;
     background-color:rgb(255, 254, 252);
     width: 70px;
     justify-content: center;
