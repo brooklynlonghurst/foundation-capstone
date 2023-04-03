@@ -28,9 +28,11 @@ let signUpName = document.getElementById('signUpName')
 let signUpEmail = document.getElementById('signUpEmail')
 let signUpPassword = document.getElementById('passwordSignUpInput')
 let signUpButton = document.getElementById('signUpBtn')
+let signUpForm = document.querySelector('.signInUpForm')
 
-signUpButton.addEventListener('click', (event) => {
+signUpForm.addEventListener('submit', (event) => {
     event.preventDefault()
+    console.log('hit sign up form function')
 
     let body = {
         signUpName: signUpName.value,
@@ -38,15 +40,15 @@ signUpButton.addEventListener('click', (event) => {
         signUpPassword: signUpPassword.value
     }
   
-    signUpName.value = ''
-    signUpEmail.value = ''
-    signUpPassword.value = ''
-
     axios.post(`${baseURL}/signup`, body).then((result) => {
         console.log(result.data)
     }).catch(() => {
         console.log('something went wrong')
     })
+
+    signUpName.value = ''
+    signUpEmail.value = ''
+    signUpPassword.value = ''
 })
 
 
@@ -55,6 +57,9 @@ let btn = document.getElementById("signUpBtn")
 let span = document.getElementsByClassName("close")[0]
 
 btn.onclick = function() {
+    const signUpMessage = `<h3>Thanks for signing up, ${signUpName.value}!</h3>`
+    document.getElementById('signUpModal').innerHTML = signUpMessage
+   
     modal.style.display = "block";
 }
   
@@ -63,11 +68,9 @@ span.onclick = function() {
 }
   
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
       modal.style.display = "none";
     }
 }
 
-const signUpMessage = `<h3>Thanks for signing up, ${signUpName}!</h3>`
 
-document.h3.innerHTML = signUpMessage
