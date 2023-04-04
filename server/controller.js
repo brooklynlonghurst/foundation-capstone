@@ -1,7 +1,7 @@
 const plants = require('./db.json')
 const bcrypt = require('bcryptjs')
 const users = []
-let globalId = 2
+let globalId = 5
 
 module.exports = {
     getPlants: (req, res) => {
