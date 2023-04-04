@@ -28,7 +28,7 @@ On the top right of the navbar there is a 'Post Your Plant' feature. Once that h
 ![The Botanical Blog Post Your Plant](/READMEimgs/Post-Your-Plant.png)
 ![The Botanical Blog Plant Post Added](/READMEimgs/Updated-Profile.png)
 
-Once the 'Add Your Plant' button has been clicked, and the form has been exited out of, the new plant post will be on the profile page. Under the description of plant is a 'Remove' button which allows the post to be deleted. 
+Once the 'Add Your Plant' button has been clicked, and the form has been exited out of, the new plant post will be on the profile page. Under the description of plant is a 'Remove' button which allows the post to be deleted. The first post will be deleted after the 'Remove' button has been clicked. 
 
 ![The Botanical Blog Remove](/READMEimgs/Pressing-Remove.png)
 ![The Botanical Blog Post Removed](/READMEimgs/Removed-First-Post.png)
