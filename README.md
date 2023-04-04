@@ -23,12 +23,12 @@ After clicking out of the signed up notification, type in the correct email addr
 ![The Botanical Blog Login](/READMEimgs/Login.png)
 ![The Botanical Blog Profile](/READMEimgs/Profile-Page.png)
 
-On the top right of the navbar there is a “Post Your Plant” feature. Once that has been clicked, it will display a modal of a form. This form takes in a typed input of the name of a plant, pasted an image’s URL and a written description of this particular plant and be able to post it to the profile page.
+On the top right of the navbar there is a 'Post Your Plant' feature. Once that has been clicked, it will display a modal of a form. This form takes in a typed input of the name of a plant, pasted an image’s URL and a written description of this particular plant and be able to post it to the profile page.
 
 ![The Botanical Blog Post Your Plant](/READMEimgs/Post-Your-Plant.png)
 ![The Botanical Blog Plant Post Added](/READMEimgs/Updated-Profile.png)
 
-Once the 'Add Plant' button has been clicked, and form has been exited out of, the new plant post will be on the profile page. Under the description of plant is a 'Remove' button which allows the post to be deleted. 
+Once the 'Add Your Plant' button has been clicked, and the form has been exited out of, the new plant post will be on the profile page. Under the description of plant is a 'Remove' button which allows the post to be deleted. 
 
 ![The Botanical Blog Remove](/READMEimgs/Pressing-Remove.png)
 ![The Botanical Blog Post Removed](/READMEimgs/Removed-First-Post.png)
