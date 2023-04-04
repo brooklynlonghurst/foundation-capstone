@@ -16,9 +16,7 @@ loginButton.addEventListener('click', (event) => {
     loginPassword.value = ''
 
     axios.post(`${baseURL}/login`, body).then((result) => {
-        // console.log('hello')
         window.location.assign('http://127.0.0.1:5501/client/profile.html')
-        //console.log(result.data)
     }).catch(() => {
         console.log('something went wrong')
     })
